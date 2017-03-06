@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RPSLS</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1 class=" text-center">Rock Paper Scissors Lizard Spock</h1>
+    <p class="lead text-center text-muted">This expansion to the popular game of Rock-paper-scissors was created by <a href="http://www.samkass.com/theories/RPSSL.html">Sam Kass</a> and Karen Bryla, and made even more popular by the TV show The Big Bang Theory.</p>
+    <div class="row">
+      <figure class="col-sm-4">
+        <img src="Pierre_ciseaux_feuille_lézard_spock_aligned.svg" alt="Rock-paper-scissors-lizard-spock logo" class="img-responsive">
+        <figcaption class="text-center">Source: <a href="https://commons.wikimedia.org/wiki/File:Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg">Wikimedia Commons</a></figcaption>
+      </figure>
+      <div class="col-sm-8">
+        <p>The rules are simple:</p>
+        <p> 
+          Scissors cuts paper. &#8213; Paper covers rock. 	&#8213; Rock crushes lizard. 	&#8213; Lizard poisons Spock. 	&#8213; Spock smashes scissors. 	&#8213; Scissors decapitates lizard. 	&#8213; Lizard eats paper. 	&#8213; Paper disproves Spock. 	&#8213; Spock vaporizes rock. 	&#8213; Rock crushes scissors. 
+        </p>
+        <p><strong>Insert your choice below </strong> and test your luck against the computer. Let's play!</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="playerChoice" class="sr-only">Player</label>
+            <input type="text" class="form-control" id="playerChoice" placeholder="Your Choice" required>
+          </div>
+          <input type="button" value="Submit" id="submit" class="btn btn-success">
+        </form>
+
+        <div class="result">
+          <p class="lead">Player Chooses: <span id="playerResult" class="text-capitalize"></span></p>
+          <p class="lead">Computer Chooses: <span id="compResult" class="text-capitalize"></span></p>
+          <p id="score" class="lead"></p>
+          <input type="button" value="Reset" class="btn btn-warning" onClick="window.location.reload()" id="reset">
+        </div>
+    </div> <!--/ game column -->
+    
+  </div><!--/ row -->
+  </div><!--/ container -->
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

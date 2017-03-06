@@ -1,0 +1,52 @@
+body {
+  /*background-color: #e3e4e5; */
+  color: #0f0603;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #ffaa2f;
+}
+
+form {
+  padding: 1.5rem 0;
+}
+
+#playerChoice {
+    width: 30rem;
+    padding: 2rem;
+    margin: 1% auto;
+    text-align: center;
+    background: none;
+    border-style: none;
+    border-bottom: 3px solid #ffaa2f;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#playerChoice:focus {
+  background-color: #ffaa2f;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+#submit, 
+#reset {
+  padding: 1rem;
+  width: 10rem;
+  text-transform: uppercase;
+}
+
+#playerResult,
+#compResult {
+  border-bottom: 3px solid #ffaa2f;
+}
+
+.btn.btn-warning {
+  background-color: #ffaa2f;
+}
